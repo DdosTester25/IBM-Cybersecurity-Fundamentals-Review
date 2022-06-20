@@ -1,0 +1,19 @@
+def findValue( X , Y , P ):
+    if P % 2 == 0:
+        return int(max(X, Y) / min(X, Y))
+ 
+    else:
+        return int(max(2 * X, Y) / min(2 * X, Y))
+ 
+# Driver code
+# 1st test case
+X = 1
+Y = 2
+P = 1
+print(findValue(X, Y, P))
+ 
+# 2nd test case
+X = 3
+Y = 7
+P = 2
+print((findValue(X, Y, P)))
