@@ -1,0 +1,18 @@
+cpu_num = random.randint(1,6)
+user_selection = ["Odd", "Even"]
+
+def cpu_choice():
+    choice = random.randint(1,6)
+    print("The computer's choice is",choice)
+    return choice
+
+def user_choice():
+    while(True):
+        choice = input("Odd or Even? ")
+        if choice in user_selection:
+            print("Your choice is",choice)
+            return choice
+        else:
+            print("You did not write your answer correctly, please try again.")
+            print("Sike you're weird")
+            
